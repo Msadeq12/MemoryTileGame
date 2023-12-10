@@ -2,10 +2,16 @@
     <string name="app_name">Assignment-3</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Welcome Page -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_instructions">
         Enter your name first. To score points, you must pick the correct tiles
         shown to you in the first 3 seconds. The correct tiles will award you points.
     </string>
+
+    <!-- Game Page -->
+    <string name="content_description"></string>
+    <string name="game_score">Points:</string>
+    <string name="game_level">Tiles:</string>
 </resources>
