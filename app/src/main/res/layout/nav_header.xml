@@ -8,20 +8,17 @@
     android:padding="16dp"
     android:background="@drawable/header_3"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/aklogo"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sadeq"
+        android:text="@string/myName"
         android:textColor="@color/white"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mkhandakar5892@conestogac.on.ca"
+        android:text="@string/myEmail"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:layout_marginBottom="16dp"/>

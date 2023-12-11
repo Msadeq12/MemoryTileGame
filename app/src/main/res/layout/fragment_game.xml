@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:id="@+id/game_constraint_layout"
     android:layout_height="match_parent"
-    tools:context=".GameFragment">
+    tools:context=".Game.GameFragment">
     <!-- TODO: Update blank fragment layout -->
 
     <ImageButton
@@ -20,8 +20,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="1"
-        android:contentDescription="1"
+        android:tag="@string/one"
+        android:contentDescription="@string/content_description"
          />
 
     <ImageButton
@@ -35,8 +35,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="2"
-        android:contentDescription="2"
+        android:tag="@string/two"
+        android:contentDescription="@string/content_description"
         />
 
     <ImageButton
@@ -50,8 +50,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="3"
-        android:contentDescription="3"
+        android:tag="@string/three"
+        android:contentDescription="@string/content_description"
          />
 
     <ImageButton
@@ -65,8 +65,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="4"
-        android:contentDescription="4" />
+        android:tag="@string/four"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box5"
@@ -79,8 +79,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="5"
-        android:contentDescription="5" />
+        android:tag="@string/five"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box6"
@@ -93,8 +93,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="6"
-        android:contentDescription="6" />
+        android:tag="@string/six"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box7"
@@ -107,8 +107,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
         android:background="@color/black"
-        android:tag="7"
-        android:contentDescription="7"/>
+        android:tag="@string/seven"
+        android:contentDescription="@string/content_description"/>
 
     <ImageButton
         android:id="@+id/box8"
@@ -121,8 +121,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="8"
-        android:contentDescription="8"
+        android:tag="@string/eight"
+        android:contentDescription="@string/content_description"
         />
 
     <ImageButton
@@ -136,8 +136,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="9"
-        android:contentDescription="9" />
+        android:tag="@string/nine"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box10"
@@ -150,9 +150,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="10"
-        android:contentDescription="10" />
-
+        android:tag="@string/ten"
+        android:contentDescription="@string/content_description" />
     <ImageButton
         android:id="@+id/box11"
         android:layout_width="53dp"
@@ -164,8 +163,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="11"
-        android:contentDescription="11" />
+        android:tag="@string/eleven"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box12"
@@ -178,8 +177,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="12"
-        android:contentDescription="12" />
+        android:tag="@string/twelve"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box13"
@@ -192,8 +191,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639"
         android:background="@color/black"
-        android:tag="13"
-        android:contentDescription="13"
+        android:tag="@string/thirteen"
+        android:contentDescription="@string/content_description"
         />
 
     <ImageButton
@@ -207,8 +206,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="14"
-        android:contentDescription="14" />
+        android:tag="@string/fourteen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box15"
@@ -221,8 +220,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="15"
-        android:contentDescription="15" />
+        android:tag="@string/fifteen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box16"
@@ -235,8 +234,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="16"
-        android:contentDescription="16" />
+        android:tag="@string/sixteen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box17"
@@ -249,8 +248,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="17"
-        android:contentDescription="17" />
+        android:tag="@string/seventeen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box18"
@@ -263,8 +262,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="18"
-        android:contentDescription="18" />
+        android:tag="@string/eighteen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box19"
@@ -277,8 +276,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@color/black"
-        android:tag="19"
-        android:contentDescription="19" />
+        android:tag="@string/nineteen"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box20"
@@ -291,8 +290,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="20"
-        android:contentDescription="20" />
+        android:tag="@string/twenty"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box21"
@@ -305,8 +304,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="21"
-        android:contentDescription="21" />
+        android:tag="@string/twentyone"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box22"
@@ -319,8 +318,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="22"
-        android:contentDescription="22" />
+        android:tag="@string/twentytwo"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box23"
@@ -333,8 +332,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="23"
-        android:contentDescription="23" />
+        android:tag="@string/twentythree"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box24"
@@ -347,8 +346,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="24"
-        android:contentDescription="24" />
+        android:tag="@string/twentyfour"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box25"
@@ -361,8 +360,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457"
         android:background="@color/black"
-        android:tag="25"
-        android:contentDescription="25" />
+        android:tag="@string/twentyfive"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box26"
@@ -375,8 +374,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="26"
-        android:contentDescription="26" />
+        android:tag="@string/twentysix"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box27"
@@ -389,8 +388,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="27"
-        android:contentDescription="27" />
+        android:tag="@string/twentyseven"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box28"
@@ -403,8 +402,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="28"
-        android:contentDescription="28" />
+        android:tag="@string/twentyeight"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box29"
@@ -417,8 +416,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="29"
-        android:contentDescription="29" />
+        android:tag="@string/twentynine"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box30"
@@ -431,8 +430,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="30"
-        android:contentDescription="30" />
+        android:tag="@string/thrity"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box31"
@@ -445,8 +444,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         android:background="@color/black"
-        android:tag="31"
-        android:contentDescription="31" />
+        android:tag="@string/thirtyone"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box32"
@@ -459,8 +458,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="32"
-        android:contentDescription="32" />
+        android:tag="@string/thirtytwo"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box33"
@@ -473,8 +472,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="33"
-        android:contentDescription="33" />
+        android:tag="@string/thirtythree"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box34"
@@ -487,8 +486,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="34"
-        android:contentDescription="34"/>
+        android:tag="@string/thirtyfour"
+        android:contentDescription="@string/content_description"/>
 
     <ImageButton
         android:id="@+id/box35"
@@ -501,8 +500,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="35"
-        android:contentDescription="35" />
+        android:tag="@string/thirtyfive"
+        android:contentDescription="@string/content_description" />
 
     <ImageButton
         android:id="@+id/box36"
@@ -515,8 +514,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.262"
         android:background="@color/black"
-        android:tag="36"
-        android:contentDescription="36" />
+        android:tag="@string/thirtysix"
+        android:contentDescription="@string/content_description" />
 
     <TextView
         android:id="@+id/txtCounter"
@@ -532,14 +531,14 @@
 
     <TextView
         android:id="@+id/txtPoints"
-        android:layout_width="36dp"
-        android:layout_height="32dp"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
         android:text=""
         android:textAlignment="viewStart"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027" />
@@ -553,10 +552,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/txtLevel"
@@ -584,6 +583,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
+
+    <ImageView
+        android:id="@+id/imgMark"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

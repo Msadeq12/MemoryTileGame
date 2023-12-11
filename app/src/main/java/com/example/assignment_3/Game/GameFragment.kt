@@ -1,6 +1,9 @@
-package com.example.assignment_3
+package com.example.assignment_3.Game
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.fragment.app.Fragment
@@ -9,10 +12,15 @@ import android.view.View
 import androidx.lifecycle.lifecycleScope
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.children
-import com.example.assignment_3.databinding.FragmentGameBinding
+import androidx.lifecycle.ViewModelProvider
+import com.example.assignment_3.R
+import com.example.assignment_3.data.PlayerViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
@@ -30,8 +38,13 @@ class GameFragment : Fragment() {
     private var gameScore : Int = 0
     private lateinit var view: View
     private lateinit var gameTimer : CountDownTimer
-    private lateinit var binding : FragmentGameBinding
     private var tiles : Int = 4
+    private lateinit var markImage : ImageView
+    private lateinit var correct : Drawable
+    private lateinit var wrong : Drawable
+
+    private lateinit var playerViewModel : PlayerViewModel
+    private lateinit var preferenceName : SharedPreferences
 
 
 
@@ -40,6 +53,7 @@ class GameFragment : Fragment() {
 
         randomButtonList = mutableListOf()
         userInputButtonList = mutableListOf()
+        playerViewModel = ViewModelProvider(this).get(PlayerViewModel::class.java)
 
     }
 
@@ -57,6 +71,9 @@ class GameFragment : Fragment() {
         points = view.findViewById(R.id.txtPoints)
         gameTiles = view.findViewById(R.id.txtLevel)
         gameLayout = view.findViewById(R.id.game_constraint_layout)
+        markImage = view.findViewById(R.id.imgMark)
+        correct = ResourcesCompat.getDrawable(resources, R.drawable.correct_mark, null)!!
+        wrong = ResourcesCompat.getDrawable(resources, R.drawable.wrong_mark, null)!!
 
         points.text = gameScore.toString()
         gameTiles.text = tiles.toString()
@@ -172,24 +189,68 @@ class GameFragment : Fragment() {
     }
 
     /*
-    * This function checks if the player got the tiles right, increments score by 10 pts.
+    * This function checks if the player got the tiles right, increments score by 10 / 20 pts.
     */
     private fun WinLoseConditions(){
 
-        if(userInputButtonList.containsAll(randomButtonList)){
-            gameScore += 10
-            points.text = gameScore.toString()
+        lifecycleScope.launch {
 
-            ReloadGame()
-            StartGame()
+            if(userInputButtonList.containsAll(randomButtonList)){
+
+                LevelUp()
+
+                preferenceName = requireContext().getSharedPreferences("player_name", Context.MODE_PRIVATE)
+                val name = preferenceName.getString("name", null)
+
+                if(name != ""){
+                    playerViewModel.updateScore(name.toString(), gameScore)
+                }
+
+                points.text = gameScore.toString()
+                gameTiles.text = tiles.toString()
+                markImage.setImageDrawable(correct)
+                delay(1000)
+                markImage.setImageDrawable(null)
+
+                ReloadGame()
+                StartGame()
+
+
+            }
+
+            else if(userInputButtonList.count() >= tiles && !userInputButtonList.containsAll(randomButtonList)){
+
+                points.text = gameScore.toString()
+                markImage.setImageDrawable(wrong)
+                delay(1000)
+                markImage.setImageDrawable(null)
+
+                ReloadGame()
+                StartGame()
+
+            }
+
         }
 
-        else if(userInputButtonList.count() >= tiles && !userInputButtonList.containsAll(randomButtonList)){
+    }
 
-            points.text = gameScore.toString()
+    // this function is used to increase number of tiles after the first 3 successful rounds
+    private fun LevelUp(){
 
-            ReloadGame()
-            StartGame()
+        if(gameScore <= 30){
+            gameScore += 10
+        }
+
+        if(gameScore == 30){
+            tiles++
+        }
+
+        if (gameScore == 120){
+            tiles++
+        }
+
+        when{
+            gameScore > 30 -> { gameScore += 20 }
         }
 
 

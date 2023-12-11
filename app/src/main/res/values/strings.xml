@@ -4,14 +4,72 @@
     <string name="close_nav">Close Navigation Drawer</string>
 
     <!-- Welcome Page -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="enterName">Enter your Name</string>
     <string name="welcome_instructions">
         Enter your name first. To score points, you must pick the correct tiles
         shown to you in the first 3 seconds. The correct tiles will award you points.
     </string>
+    <string name="buttonSubmit">Submit</string>
+
+
+    <!-- Score Page -->
+    <string name="scoreTitle">Top 3 Player Scores</string>
 
     <!-- Game Page -->
-    <string name="content_description"></string>
+    <string name="content_description">NULL</string>
     <string name="game_score">Points:</string>
     <string name="game_level">Tiles:</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+    <string name="seventeen">17</string>
+    <string name="eighteen">18</string>
+    <string name="nineteen">19</string>
+    <string name="twenty">20</string>
+    <string name="twentyone">21</string>
+    <string name="twentytwo">22</string>
+    <string name="twentythree">23</string>
+    <string name="twentyfour">24</string>
+    <string name="twentyfive">25</string>
+    <string name="twentysix">26</string>
+    <string name="twentyseven">27</string>
+    <string name="twentyeight">28</string>
+    <string name="twentynine">29</string>
+    <string name="thrity">30</string>
+    <string name="thirtyone">31</string>
+    <string name="thirtytwo">32</string>
+    <string name="thirtythree">33</string>
+    <string name="thirtyfour">34</string>
+    <string name="thirtyfive">35</string>
+    <string name="thirtysix">36</string>
+
+    <!-- Custom Score Layout page -->
+    <string name="sampleId">1</string>
+    <string name="sampleName">Name</string>
+    <string name="sampleScore">Score</string>
+
+    <!-- Nav Header layout -->
+    <string name="myName">Mohammad Sadeq Khandakar</string>
+    <string name="myEmail">Mkhandakar5892@conestogac.on.ca</string>
+
+    <!-- Nav menu layout -->
+    <string name="gameNav">Game</string>
+    <string name="scoreNav">Scores</string>
+    <string name="welcomeNav">Welcome</string>
+
+
 </resources>
